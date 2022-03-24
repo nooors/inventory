@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin    : 0px;
+    padding   : 0px;
+
+}
+
+.container {
+    margin          : 1rem 1rem;
+    background-color: lightslategrey;
+    padding         : 1rem;
+    border-radius   : 0.5rem;
+    min-height      : 600px;
+    position        : relative;
+}
+
+body {
+    background-color: lightgray;
+    font-family     : 'Quicksand', sans-serif;
+    font-size       : 16px;
+}
+
+.header-main {
+
+    border-top      : 1px solid rgb(255, 123, 0);
+    border-left     : 1px solid rgb(255, 123, 0);
+    border-right    : 2px solid rgb(255, 123, 0);
+    border-bottom   : 0px;
+    background-image: linear-gradient(135deg, #0e2647 0%, #0e2647 50%, #13375a 61%, #0e2647 70%, #0e2647 100%);
+    border-radius   : 0.5rem 0.5rem 0rem 0rem;
+    box-shadow      : 2px 1px rgb(255, 123, 0, 0.5);
+}
+
+header {
+    display       : flex;
+    flex-direction: column;
+    flex-wrap     : wrap;
+    width         : 100%;
+}
+
+header h2 {
+    font-size     : 2rem;
+    color         : ivory;
+    padding-top   : 0.75rem;
+    padding-bottom: 0px;
+    text-align    : center;
+}
+
+header a {
+    display        : block;
+    color          : ivory;
+    text-decoration: none;
+    text-align     : right;
+    padding-right  : 1rem;
+    padding-bottom : 0.5rem;
+    padding-top    : 0px;
+    cursor         : po;
+
+}
+
+header p {
+
+    color         : ivory;
+    text-align    : right;
+    padding-right : 1rem;
+    padding-bottom: 0.5rem;
+
+
+}
+
+hr {
+    border    : 1px solid antiquewhite;
+    box-shadow: 1px 1px 2px antiquewhite;
+}
+
+nav {
+    border          : 1px solid rgb(255, 123, 0);
+    border-top      : none;
+    background-color: darkblue;
+    box-shadow      : 1px 1px 2px rgb(255, 123, 0);
+    color           : ivory;
+    border-radius   : 0 0 0.5rem 0.5rem;
+
+
+}
+
+nav ul {
+    display   : block;
+    text-align: center;
+
+
+}
+
+nav ul li {
+    display   : inline-block;
+    color     : ivory;
+    list-style: none;
+    padding   : 0.5rem;
+}
+
+nav ul li a {
+    color              : ivory;
+    text-decoration    : none;
+    padding            : 1rem 0.25rem 1rem 1rem;
+    transition-duration: 100ms;
+    cursor             : context-menu;
+}
+
+nav ul li a:hover {
+    text-shadow: 3px 3px 4px rgb(220, 243, 243);
+
+}
+
+h1 {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+section {
+
+    margin-top     : 2rem;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+    margin-bottom  : 5rem;
+}
+
+
+/*.image {
+    
+    min-width: 25%;
+    min-height: 4rem;
+    margin-right: 1.5rem; 
+    
+    border: 0.1rem solid blueviolet;
+}*/
+
+/*.image:first-child {
+    margin-left: 1.5rem;
+}*/
+
+img {
+    max-width: 200px;
+    margin   : 1rem 0rem;
+}
+
+.option {
+    margin-top: 0rem;
+    display   : block;
+
+    text-decoration: none;
+    color          : darkblue;
+}
+
+p {
+    text-align: center;
+}
+
+table th {
+    text-transform: capitalize;
+    padding       : 1rem;
+}
+
+table td {
+    padding: 1rem;
+}
+
+footer {
+
+    display        : relative;
+    bottom         : 0px;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+
+}
+
+.footer {
+    width           : 100%;
+    display         : inline-block;
+    background-image: linear-gradient(135deg, #0e2647 0%, #0e2647 50%, #13375a 61%, #0e2647 70%, #0e2647 100%);
+    color           : ivory;
+    padding         : 1rem;
+    border-radius   : 0 0 0.5rem 0.5rem;
+    text-align      : center;
+    box-shadow      : 1px 2px rgb(255, 123, 0);
+}
+
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 12px;
+    }
+
+    img {
+        max-width: 130px;
+
+    }
+
+    nav {
+        display: none;
+    }
+}
